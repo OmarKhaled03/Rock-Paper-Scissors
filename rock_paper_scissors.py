@@ -12,7 +12,7 @@ def player_choice():
     player_choice.choice = question.lower()
 
     if (player_choice.choice in Choices.__members__):
-        print("You chose: " + player_choice.choice.lower())
+        print("You chose: " + player_choice.choice)
     else:
         print("Uhh that doesn't sound right...")
         player_choice()
@@ -39,10 +39,10 @@ def winner():
         print("It's a tie! Play again? (Please type in Yes or No)")
 
     elif(winner_cases[1] or winner_cases[3] or winner_cases[5]):
-        print('Computer wins :( Try again?')
+        print('Computer wins :( Try again? (Please type in Yes or No)')
 
     elif(winner_cases[2] or winner_cases[4] or winner_cases[6]):
-        print('You win! Play Again?')
+        print('You win! Play Again? (Please type in Yes or No)')
 
     else:
         print("Uhh that doesn't sound right...")
